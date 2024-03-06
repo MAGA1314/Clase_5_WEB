@@ -31,7 +31,7 @@ const perro = {
 // Segunda forma
 const auto = {};
 auto.modelo = 1986;
-auto.color = "verde";
+auto.colorv = "verde";
 auto.caracteristicas = {
     marca: "BMW",
     cilindraje: 2500
@@ -41,13 +41,13 @@ console.log(auto)
 console.log(perro)
 
 // tercera forma
-let color= "rojo";
+let colorr= "rojo";
 let modelo= 1980;
 let caracteristicas={
     marca:"Mercedes",
     cilindraje:3000
 }
-const carro = {color,modelo,caracteristicas}
+const carro = {colorr,modelo,caracteristicas}
 console.log(carro);
 
 // Cuara forma 
@@ -79,4 +79,5 @@ console.log(perro);
 console.log(Animal);
 
 // Destructuring (Obtener las propiedades)
-const {} = perro;
+const {color} = perro;
+console.log(color)
